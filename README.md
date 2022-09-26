@@ -9,8 +9,7 @@ dbt init garbage_cal
 cd garbage_cal
 # explain structure shortly
 vim ~/.dbt/profiles.yml # add postgres credentials
-# fill seeds/users.csv with data
-dbt seed
+start-database
 ```
 
 `~/.dbt/profiles.yml`
