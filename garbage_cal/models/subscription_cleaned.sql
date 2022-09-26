@@ -1,2 +1,2 @@
 select *
-from {{ source('operational_system','subscription') }}
+from {{ source('operational_system', 'subscription') }}

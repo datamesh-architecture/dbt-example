@@ -27,7 +27,7 @@ garbage_cal:
       user: postgresUser
       pass: postgresPassword
       dbname: postgres
-      schema: postgres
+      schema: public
 
     prod:
       type: postgres
