@@ -1,1 +1,2 @@
-select count(name) from {{ ref('email_provider') }}
+select count(name)
+from {{ ref('email_provider') }}

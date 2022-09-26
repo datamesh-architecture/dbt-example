@@ -1,1 +1,3 @@
-select * from {{ ref('my_user') }} where not (is_active)
+select *
+from {{ ref('subscription_cleaned') }}
+where not (is_active)
