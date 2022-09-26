@@ -12,6 +12,8 @@ dbt deps
 dbt seed
 dbt run
 dbt test
+dbt docs generate
+dbt docs serve
 ```
 
 `~/.dbt/profiles.yml`

@@ -2,6 +2,7 @@ version: 2
 
 seeds:
   - name: email_provider
+    description: "Popular e-mail providers with their well-known domain suffixes"
     columns:
       - name: name
         tests:
@@ -12,6 +13,8 @@ seeds:
           - dbt_expectations.expect_column_to_exist
           - dbt_expectations.expect_column_values_to_not_be_null
           - unique
+          - dbt_expectations.expect_column_values_to_match_regex:
+              regex: "^[^@].+\\..+$" # TODO doesn't work...
     tests:
       - dbt_expectations.expect_table_row_count_to_equal:
           value: 36
