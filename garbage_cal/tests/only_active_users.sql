@@ -1,0 +1,1 @@
+select * from {{ ref('my_user') }} where not (is_active)
