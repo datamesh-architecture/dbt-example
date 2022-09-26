@@ -2,4 +2,5 @@ brew update
 brew install git
 brew tap dbt-labs/dbt
 brew install dbt-postgres
+brew upgrade dbt-postgres
 brew link --overwrite dbt-postgres

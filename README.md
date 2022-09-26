@@ -3,19 +3,21 @@
 ## Walk-through
 
 ```
+cd setup
 ./install-dbt
-# create dbt project
-dbt init garbage_cal
-cd garbage_cal
-# explain structure shortly
-vim ~/.dbt/profiles.yml # add postgres credentials
-start-database
+vim ~/.dbt/profiles.yml # add postgres credentials from below
+./start-database
+cd ..
+dbt deps
+dbt seed
+dbt run
+dbt test
 ```
 
 `~/.dbt/profiles.yml`
 
 ```yaml
-garbage_cal:
+garbage_calendar:
   outputs:
 
     dev:

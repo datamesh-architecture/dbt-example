@@ -1,0 +1,2 @@
+docker kill dbt-example-postgres
+docker rm dbt-example-postgres

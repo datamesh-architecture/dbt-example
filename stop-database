@@ -1,2 +1,0 @@
-docker kill myPostgresDb
-docker rm myPostgresDb
