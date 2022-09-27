@@ -1,4 +1,5 @@
 version: 2
 
 models:
-  - name: subscription_cleaned
+  - name: subscriptions
+  - name: collections

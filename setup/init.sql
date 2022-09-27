@@ -1,4 +1,4 @@
-create table src_subscription
+create table src_subscriptions
 (
     id                         integer,
     email                      text,
@@ -16,14 +16,14 @@ create table src_subscription
     bulk_garbage               boolean
 );
 
-create table src_collection
+create table src_collections
 (
     location text,
     garbage  text,
     dates    text
 );
 
-insert into src_subscription (id, email, location, is_active, version, when_created, when_updated, residual_waste, organic, plastic, diapers, paper, special_waste, bulk_garbage)
+insert into src_subscriptions (id, email, location, is_active, version, when_created, when_updated, residual_waste, organic, plastic, diapers, paper, special_waste, bulk_garbage)
 values  (3, 'large-chimp@t-online.de', 'Nemostadt', true, 3, '2016-11-03 16:02:25.874', '2018-01-09 09:15:22.933', true, true, true, false, true, true, true),
         (12, 'fair-spider@sushi.example.com', 'Harrington - Badgerdorf', true, 1, '2016-11-16 10:33:39.568', '2016-11-16 10:33:39.568', true, true, true, true, true, false, false),
         (14, 'quiet-leech@sushi.example.com', 'Giclas', true, 1, '2016-11-16 10:33:39.583', '2016-11-16 10:33:39.583', true, true, true, true, true, false, false),
@@ -5987,7 +5987,7 @@ values  (3, 'large-chimp@t-online.de', 'Nemostadt', true, 3, '2016-11-03 16:02:2
         (17029, 'model-satyr@gmail.com', 'Drakestadt - Adamsdorf', true, 1, '2022-09-25 09:41:59.242321', '2022-09-25 09:42:38.298319', true, true, true, true, true, true, true),
         (17030, 'above-llama@gmail.com', 'Giclas', true, 1, '2022-09-25 12:29:40.987414', '2022-09-25 12:29:55.014027', false, false, true, false, false, false, false);
 
-insert into src_collection (location, garbage, dates)
+insert into src_collections (location, garbage, dates)
 values  ('Brintondorf', 'residual waste', '08.01.2022;21.01.2022;04.02.2022;18.02.2022;04.03.2022;18.03.2022;01.04.2022;14.04.2022;29.04.2022;13.05.2022;28.05.2022;11.06.2022;24.06.2022;08.07.2022;22.07.2022;05.08.2022;20.08.2022;02.09.2022;16.09.2022;30.09.2022;14.10.2022;28.10.2022;11.11.2022;25.11.2022;09.12.2022;23.12.2022'),
         ('Brintondorf', 'organic', '14.01.2022;28.01.2022;11.02.2022;25.02.2022;11.03.2022;25.03.2022;08.04.2022;23.04.2022;06.05.2022;20.05.2022;03.06.2022;18.06.2022;01.07.2022;15.07.2022;29.07.2022;12.08.2022;26.08.2022;09.09.2022;23.09.2022;08.10.2022;21.10.2022;05.11.2022;18.11.2022;02.12.2022;16.12.2022;31.12.2022'),
         ('Brintondorf', 'paper', '10.01.2022;07.02.2022;07.03.2022;04.04.2022;02.05.2022;30.05.2022;27.06.2022;25.07.2022;22.08.2022;19.09.2022;17.10.2022;14.11.2022;12.12.2022'),

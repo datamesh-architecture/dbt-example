@@ -1,3 +1,3 @@
 select *
-from {{ ref('subscription_cleaned') }}
+from {{ ref('subscriptions') }}
 where not (is_active)

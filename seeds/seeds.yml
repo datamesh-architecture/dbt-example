@@ -1,7 +1,7 @@
 version: 2
 
 seeds:
-  - name: email_provider
+  - name: email_providers
     description: "Popular e-mail providers with their well-known domain suffixes"
     columns:
       - name: name

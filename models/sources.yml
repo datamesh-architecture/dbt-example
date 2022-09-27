@@ -4,7 +4,7 @@ sources:
   - name: operational_system
     schema: public
     tables:
-      - name: src_subscription
+      - name: src_subscriptions
         description: "E-mail subscriptions for notifications of upcoming garbage collections"
         columns:
           - name: email
@@ -28,4 +28,4 @@ sources:
               column_A: "when_updated"
               column_B: "when_created"
               or_equal: True
-      - name: src_collection
+      - name: src_collections
