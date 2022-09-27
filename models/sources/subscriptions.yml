@@ -2,4 +2,3 @@ version: 2
 
 models:
   - name: subscriptions
-  - name: collections

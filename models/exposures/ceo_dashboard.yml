@@ -2,12 +2,12 @@ version: 2
 
 exposures:
 
-  - name: THE_dashboard
+  - name: ceo_dashboard
     type: dashboard
     maturity: high
     url: https://www.innoq.com/dbt-dashboard-url
     description: >
-      EVERYTHING on one dashboard!!!111
+      Dashboard for the CEO.
 
     depends_on:
       - ref('subscriptions')
