@@ -2,3 +2,4 @@ version: 2
 
 models:
   - name: collections
+    description: '{{ doc("collections") }}'
