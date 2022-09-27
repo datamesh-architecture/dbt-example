@@ -10,7 +10,7 @@ exposures:
       EVERYTHING on one dashboard!!!111
 
     depends_on:
-      - ref('subscription_cleaned')
+      - ref('email_domains_grouped')
 
     owner:
       name: Heribert Innoq

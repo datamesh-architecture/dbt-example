@@ -1,3 +1,3 @@
 select is_active, count(*)
-from {{ source('operational_system', 'subscription') }}
+from {{ ref('subscription') }}
 group by is_active

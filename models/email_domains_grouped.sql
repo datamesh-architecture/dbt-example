@@ -1,5 +1,5 @@
 with subscription as (
-    select * from {{ source('operational_system', 'subscription') }}
+    select * from {{ source('operational_system', 'src_subscription') }}
 ),
 
 email_provider as (
