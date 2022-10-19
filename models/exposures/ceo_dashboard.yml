@@ -10,7 +10,7 @@ exposures:
       Dashboard for the CEO.
 
     depends_on:
-      - ref('subscriptions')
+      - ref('number_of_active_subscriptions')
 
     owner:
       name: Heribert Innoq
