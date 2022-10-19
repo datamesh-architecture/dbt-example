@@ -44,14 +44,3 @@ garbage_calendar:
 
   target: dev
 ```
-
-## Scripts
-
-Only tested on Mac M1 with homebrew installed
-
-```
-start-database
-stop-database
-install-dbt
-update-dbt
-```
