@@ -61,4 +61,4 @@ What we did so far:
 - We imported the operational data (see models/sources or the src_* tables in the database)
 - We seeded additional data to be able to aggregate all the different email domains to the Provider T-Oline (see seeds)
 - We created `models/email_domains_grouped.sql` as a first start to determine how many customers have T-Online as their provider. This answers the first question.
-- Continue to answer the second and third question.
+- Continue to answer the second and third question. Here are some ideas what you could try out: You can try out macros by parsing the dates in the collections. You can build new models with TDD.
