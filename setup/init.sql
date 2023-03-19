@@ -25,6 +25,7 @@ create table src_collections
 
 insert into src_subscriptions (id, email, location, is_active, version, when_created, when_updated, residual_waste, organic, plastic, diapers, paper, special_waste, bulk_garbage)
 values  (3, 'large-chimp@t-online.de', 'Nemostadt', true, 3, '2016-11-03 16:02:25.874', '2018-01-09 09:15:22.933', true, true, true, false, true, true, true),
+        (5, null, 'Nemostadt', false, 3, '2016-11-03 16:02:25.874', '2018-01-09 09:15:22.933', true, true, true, false, true, true, true),
         (12, 'fair-spider@sushi.example.com', 'Harrington - Badgerdorf', true, 1, '2016-11-16 10:33:39.568', '2016-11-16 10:33:39.568', true, true, true, true, true, false, false),
         (14, 'quiet-leech@sushi.example.com', 'Giclas', true, 1, '2016-11-16 10:33:39.583', '2016-11-16 10:33:39.583', true, true, true, true, true, false, false),
         (15, 'noted-goat@sushi.example.com', 'H. Smith', true, 1, '2016-11-16 10:33:39.593', '2016-11-16 10:33:39.593', true, true, true, true, true, false, false),

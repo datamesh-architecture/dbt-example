@@ -44,21 +44,3 @@ garbage_calendar:
 
   target: dev
 ```
-
-### Ways to go
-
-#### Explore
-
-You can simply explore everything on your own.
-
-#### Follow the story
-
-We offer an email notification service where people can subscribe to be notified when to put out the garbage (which is typically one day before a specific gargabe is collected). We support the garbage types organic, diapers, residual, plastic, paper as well as special and bulk waste. A subscription requires a double opt-in before it is active.
-
-We have an incident. Emails from the Provider T-Online are being rejected for four days now. How many customers are potentially affected? How many customers are actually affected? How many sent emails were lost?
-
-What we did so far:
-- We imported the operational data (see models/sources or the src_* tables in the database)
-- We seeded additional data to be able to aggregate all the different email domains to the Provider T-Oline (see seeds)
-- We created `models/email_domains_grouped.sql` as a first start to determine how many customers have T-Online as their provider. This answers the first question.
-- Continue to answer the second and third question. Here are some ideas what you could try out: You can try out macros by parsing the dates in the collections. You can build new models with TDD.
