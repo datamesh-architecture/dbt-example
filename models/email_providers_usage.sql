@@ -2,7 +2,7 @@ with email_providers as (select *
                          from {{ ref('email_providers') }}),
      emails as (select *
                 from {{ ref('emails')}}),
-     emails_with_domain as (select *, lower(split_part(email, '@', 2)) as email_domain
+     emails_with_domain as (select *, {{ email_to_domain('email') }} as email_domain
                             from emails),
      emails_grouped_by_email_provider as (select email_providers.name as email_provider, count(*) as email_address_count
                                           from email_providers,
