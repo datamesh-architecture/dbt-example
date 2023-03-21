@@ -1,0 +1,15 @@
+version: 2
+
+exposures:
+
+  - name: imperator_dashboard
+    type: dashboard
+    maturity: high
+    url: https://www.muellimperium.com/dashboard
+    description: >
+      Dashboard für den Imperator.
+
+    owner:
+      name: Imperator
+      email: imperator@muellimperium.com
+
