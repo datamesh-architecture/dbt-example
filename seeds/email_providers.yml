@@ -1,0 +1,16 @@
+version: 2
+
+seeds:
+  - name: email_providers
+    columns:
+      - name: name
+        tests:
+          - not_null
+      - name: domain
+        tests:
+          - not_null
+          - unique
+          - dbt_expectations.expect_column_values_to_not_match_regex:
+              regex: "^@"
+          - dbt_expectations.expect_column_values_to_not_match_regex:
+              regex: "[.].*[.]"

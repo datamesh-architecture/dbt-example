@@ -9,6 +9,9 @@ exposures:
     description: >
       Dashboard für den Imperator.
 
+    depends_on:
+      - ref('email_provider_usage')
+
     owner:
       name: Imperator
       email: imperator@muellimperium.com
